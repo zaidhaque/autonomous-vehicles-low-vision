@@ -55,6 +55,10 @@ section {
 	min-height: 	400px;
 }
 
+section img {
+	max-height:  	400px;
+}
+
 #Section_1 {
 	float: 			left;
 }
