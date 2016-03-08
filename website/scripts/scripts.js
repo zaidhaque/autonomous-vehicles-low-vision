@@ -1,18 +1,42 @@
+$(function() {
 
-window.fbAsyncInit = function() {
-  FB.init({
-    appId      : '1856892061204363',
-    xfbml      : true,
-    version    : 'v2.5'
-  });
-};
+  var $window           = $(window),
+      win_height_padded = $window.height() * 1.1,
+      isTouch           = Modernizr.touch;
 
-(function(d, s, id){
-   var js, fjs = d.getElementsByTagName(s)[0];
-   if (d.getElementById(id)) {return;}
-   js = d.createElement(s); js.id = id;
-   js.src = "//connect.facebook.net/en_US/sdk.js";
-   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
+  if (isTouch) { $('.revealOnScroll').addClass('animated'); }
 
+  $window.on('scroll', revealOnScroll);
+
+  function revealOnScroll() {
+    var scrolled = $window.scrollTop(),
+        win_height_padded = $window.height() * 1.1;
+
+    // Showed...
+    $(".revealOnScroll:not(.animated)").each(function () {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+
+      if (scrolled + win_height_padded > offsetTop) {
+        if ($this.data('timeout')) {
+          window.setTimeout(function(){
+            $this.addClass('animated ' + $this.data('animation'));
+          }, parseInt($this.data('timeout'),10));
+        } else {
+          $this.addClass('animated ' + $this.data('animation'));
+        }
+      }
+    });
+    // Hidden...
+   $(".revealOnScroll.animated").each(function (index) {
+      var $this     = $(this),
+          offsetTop = $this.offset().top;
+      if (scrolled + win_height_padded < offsetTop) {
+        $(this).removeClass('animated fadeInUp flipInX lightSpeedIn')
+      }
+    });
+  }
+
+  revealOnScroll();
+});
 
