@@ -1,6 +1,6 @@
 body {
 /*	background: black; */
-	color: 			#BDA487;
+	color: 			#dddddd;
 	/*background: #DCDCDC;*/
 	background: 	#ffffff;
 	border: 		0;
@@ -43,17 +43,19 @@ section {
 }
 
 h1 {
+	color: 			#BDA487;
 	font-size: 		56pt;
 	font-weight: 	lighter;
 }
 
 h2 {
-
+	color: 			#BDA487;
 	font-size: 		42pt;
 	font-weight: 	lighter;
 }
 
 h4 {
+	color: 			#BDA487;
 	font-size: 		24pt;
 	font-weight: 	lighter;
 }
@@ -64,7 +66,7 @@ h4 {
 	background-color: #BDA487;
 }
 
-p {
+p, ul {
 	color: 			#dddddd;
 }
 
