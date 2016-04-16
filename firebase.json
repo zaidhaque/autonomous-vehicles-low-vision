@@ -1,0 +1,9 @@
+{
+  "firebase": "avforlv",
+  "public": "AVforLV",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
