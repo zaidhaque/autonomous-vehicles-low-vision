@@ -22,10 +22,7 @@ header video {
     background-size: 100% 100%;
     top: 0px;
     left: 0px;
-    /*min-width: 100%;*/
     min-height: 100%;
-    width: auto;
-    height: auto;
     margin-left: 0%;
 }
 
@@ -38,21 +35,23 @@ header video {
 	margin-left: 	auto;
 	margin-right: 	auto;
 	padding-left: 	0%;
-	border: 		1px white dashed;
+	width: 			100%;
 }
 
 .content {
 	margin-left:  	auto;
     margin-right:  	auto;
     max-width:  	1080px;
-    /*border: 		1px white dashed;*/
 }
 
 section {
-	/*border:  		1px white dashed;*/
 	width:  		60%;
 	float:  		left;
 	min-height: 	400px;
+}
+
+section img {
+	max-height:  	400px;
 }
 
 #Section_1 {
@@ -163,6 +162,14 @@ animation-delay: 1.6s;
 	#Section_3 { float: none; }
 }
 
+@media screen and (max-width: 700px) {
+	h1 { font-size: 36px; line-height: 90%; }
+	h2 { font-size: 32px; line-height: 90%; }
+	h3 { font-size: 28px; line-height: 90%; }
+	h4 { font-size: 24px; line-height: 90%; }
 
-
-
+	section { width: 80%; float: none; margin-left: auto; margin-right: auto;}
+	#Section_1 { float: none; }
+	#Section_2 { float: none; }
+	#Section_3 { float: none; }
+}

@@ -7,7 +7,7 @@ body {
 	/*margin: 		0;*/
 	/*text-align: 	center;*/
 	font-size: 		18px;
-	font-family: 	"freight-big-pro", "Avenir", sans-serif;
+	font-family: 	"Avenir", sans-serif;
 	background-image: url("../img/footer_lodyas.png");
     background-repeat: repeat;
 
@@ -37,6 +37,8 @@ header video {
 	text-align: 	center;
 	margin-left: 	auto;
 	margin-right: 	auto;
+	padding-left: 	0%;
+	border: 		1px white dashed;
 }
 
 .content {
@@ -70,6 +72,8 @@ h1 {
 	font-size: 		56pt;
 	font-weight: 	lighter;
 	line-height:  	40%;
+	font-family: 	"freight-big-pro", "Avenir", sans-serif;
+
 }
 
 h2 {
@@ -78,6 +82,7 @@ h2 {
 	font-weight: 	lighter;
 	line-height:  	40%;
 	margin-top: 	45pt;
+	font-family: 	"freight-big-pro", "Avenir", sans-serif;
 }
 
 h4 {
@@ -85,6 +90,8 @@ h4 {
 	font-size: 		24pt;
 	font-weight: 	lighter;
 	line-height:  	40%;
+	font-family: 	"Avenir", sans-serif;
+
 }
 
 .text_box {
@@ -94,6 +101,7 @@ h4 {
 }
 
 p, ul {
+	font-family:  	"proxima-nova", sans-serif;
 	color: 			#dddddd;
 }
 
